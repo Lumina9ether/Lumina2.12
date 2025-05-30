@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Lumina Academy</title>
+  <link href="static/styles.css" rel="stylesheet"/>
+  <link href="static/academy.css" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: Orbitron, sans-serif;
+      color: #ffffff;
+      background: #000;
+      overflow-x: hidden;
+    }
+    .center { text-align: center; }
+    .glow-title {
+      font-size: 2.5rem;
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff, 0 0 20px #8F00FF;
+      margin: 20px 0;
+      text-align: center;
+      display: block;
+    }
+    .box { border: 2px solid #00ffff; border-radius: 15px; padding: 20px; margin: 20px auto; max-width: 800px; background: rgba(0, 0, 0, 0.6); box-shadow: 0 0 15px #00ffff55; }
+    #orb { width: 100px; height: 100px; margin: 20px auto; border-radius: 50%; background: radial-gradient(circle, #00ffff 0%, #8F00FF 100%); box-shadow: 0 0 20px #00ffffaa; animation: pulse 2s infinite; }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.1); opacity: 0.7; }
+    }
+    textarea { width: 90%; margin: 10px auto; padding: 10px; border-radius: 10px; border: 1px solid #6e00ff; box-shadow: 0 0 10px #6e00ff; background: rgba(0,0,0,0.5); color: #fff; font-size: 1rem; }
+    button { margin: 5px; padding: 10px 20px; border: none; border-radius: 10px; background: #00ffff; color: #000; cursor: pointer; font-weight: bold; }
+    button:hover { background: #8F00FF; color: #fff; }
+  </style>
+</head>
+<body>
+  <canvas id="stars"></canvas>
+
+  <div id="orb"></div>
+  <h1 class="glow-title">Welcome to Lumina Academy</h1>
+
+  <div class="box">
+    <h2>Webinar Access</h2>
+    <p>Watch the latest webinars hosted by Lumina Academy.</p>
+    <div><em>Embed Loom video links or webinars here</em></div>
+  </div>
+
+  <div class="box">
+    <h2>Modules</h2>
+    <p>Browse course modules and resources.</p>
+    <div><em>Dynamic module list will appear here</em></div>
+  </div>
+
+  <div class="box">
+    <h2>Community Chat</h2>
+    <p>Engage with fellow members in the chat.</p>
+    <div><em>Dynamic chat will appear here</em></div>
+  </div>
+
+  <div class="box">
+    <h2>Live Chat</h2>
+    <p>Talk live with mentors or members.</p>
+    <div><em>Dynamic live chat will appear here</em></div>
+  </div>
+
+  <div class="box">
+    <h2>Member Board</h2>
+    <p>Track active members and see who is online.</p>
+    <div><em>Member tracking will appear here</em></div>
+  </div>
+
+  <div class="box center">
+    <textarea id="user-input" placeholder="Ask Lumina a question..."></textarea>
+    <br/>
+    <button id="hey-lumina-button">Hey Lumina</button>
+    <button id="stop-button">Stop Lumina</button>
+    <div id="subtitles"></div>
+  </div>
+
+  <script src="static/stars.js"></script>
+  <script src="static/matrix.js"></script>
+  <script src="static/script.js"></script>
+</body>
+</html>

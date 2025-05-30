@@ -1,0 +1,83 @@
+
+body {
+  background: #000;
+  font-family: Orbitron, sans-serif;
+  color: #ffffff;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  font-weight: 700;
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #8F00FF;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.box {
+  border: 2px solid #00ffff;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 25px #00ffff88, 0 0 45px #8F00FF66;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #8F00FF, #5500AA);
+  color: white;
+  box-shadow: 0 0 15px #8F00FF;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #8F00FF, 0 0 45px #5500AA;
+}
+
+textarea {
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #6e00ff;
+  box-shadow: 0 0 10px #6e00ff;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  font-size: 1rem;
+}
+
+.glow-title {
+  font-size: 2.5rem;
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #8F00FF;
+  margin: 20px 0;
+  text-align: center;
+  display: block;
+}
+
+#orb {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  border-radius: 50%;
+  background: radial-gradient(circle, #00ffff 0%, #8F00FF 100%);
+  box-shadow: 0 0 20px #00ffffaa;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.7; }
+}
