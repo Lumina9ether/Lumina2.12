@@ -226,8 +226,3 @@ def save_lead():
 
 if __name__ == "__main__":
     app.run(debug=True)
-
-
-@app.route("/academy")
-def academy():
-    return render_template("academy.html")
