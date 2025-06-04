@@ -236,3 +236,13 @@ def academy():
         return render_template("academy.html")
     else:
         return "🔒 Access Denied. Please complete checkout to enter Lumina Academy.", 403
+
+
+
+@app.route("/academy")
+def academy():
+    session_id = request.args.get("session_id")
+    if session_id:
+        return render_template("academy.html")
+    else:
+        return "🔒 Access Denied. Please complete checkout to enter Lumina Academy.", 403
