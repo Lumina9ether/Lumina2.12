@@ -224,5 +224,15 @@ def save_lead():
 
     return jsonify({"status": "success"})
 
+
+@app.route("/academy.html")
+def academy():
+    # TEMPORARY: Fake Stripe session validation for testing
+    session_id = request.args.get("session_id")
+    if session_id == "FAKE_SESSION_ID":
+        return render_template("academy.html")
+    return "Access Denied: No valid session ID", 403
+
+
 if __name__ == "__main__":
     app.run(debug=True)
