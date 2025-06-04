@@ -141,7 +141,7 @@ def create_checkout_session():
                 "quantity": 1,
             }],
             mode="payment",
-            success_url="https://yourdomain.com/academy.html?session_id={CHECKOUT_SESSION_ID}",
+            success_url="https://yourdomain.com/academy?session_id={CHECKOUT_SESSION_ID}",
             cancel_url="https://yourdomain.com/?canceled=true",
         )
         return jsonify({"url": session.url})
