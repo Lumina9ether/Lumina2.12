@@ -1,4 +1,3 @@
-
 from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
 import openai
@@ -63,7 +62,7 @@ def update_memory_from_text(text, memory):
 
 def detect_funnel_trigger(text):
     trigger_phrases = [
-        "what is this", "i'm just looking", "not sure", "how do i start", "curious",
+        "what is this", "i'm just looking", "not sure", "how do i start", "curious", 
         "thinking about it", "exploring", "new to this", "how does this work", "need guidance"
     ]
     return any(phrase in text.lower() for phrase in trigger_phrases)
@@ -224,11 +223,6 @@ def save_lead():
         json.dump(leads, f, indent=2)
 
     return jsonify({"status": "success"})
-
-@app.route("/academy")
-def academy():
-    # Temporarily bypass payment verification for testing
-    return render_template("academy.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
