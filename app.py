@@ -239,6 +239,9 @@ def academy():
 
 
 
+
+
+
 @app.route("/academy")
 def academy():
     session_id = request.args.get("session_id")
