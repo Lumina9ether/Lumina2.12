@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Dashboard - Lumina Academy</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="stylesheet" href="/static/academy.css">
+    <style>
+        body {
+            background: url('/static/matrix-bg.gif') repeat, radial-gradient(circle, #0f0c29, #302b63, #24243e);
+            color: #00ffff;
+            font-family: 'Orbitron', sans-serif;
+            text-shadow: 0 0 5px #fff, 0 0 10px #0ff;
+        }
+        .dashboard-container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px;
+            background-color: rgba(0,0,0,0.7);
+            border-radius: 20px;
+            box-shadow: 0 0 25px #00ffff88;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+        }
+        .dashboard-section {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #00ffff33;
+            border-radius: 12px;
+            background: rgba(0,0,0,0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Welcome to Your Student Dashboard</h1>
+        <div class="dashboard-section">
+            <h2>My Courses</h2>
+            <p>You are currently enrolled in: Lumina Spark, Lumina Academy Basics.</p>
+        </div>
+        <div class="dashboard-section">
+            <h2>Upcoming Webinars</h2>
+            <p>Check back soon for scheduled events.</p>
+        </div>
+        <div class="dashboard-section">
+            <h2>Progress</h2>
+            <p>Your learning progress will be tracked here once your course begins.</p>
+        </div>
+    </div>
+</body>
+</html>

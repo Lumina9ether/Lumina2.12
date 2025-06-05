@@ -235,3 +235,8 @@ def academy_bypass():
     if test_paid == "true":
         return render_template("academy.html")
     return "🔒 Access Denied: Valid session required", 403
+
+
+@app.route('/dashboard')
+def dashboard():
+    return render_template('dashboard.html')
